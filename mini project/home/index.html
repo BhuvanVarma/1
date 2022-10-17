@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="icon">
+            <img src="heart.png" alt="" srcset="">
+            <h1 class="name">Diabetes Predictor</h1>
+        </div>
+        <div class="menu">
+            <div class="nav-links">Home</div>
+            <div class="nav-links">Diet Plan</div>
+            <div class="nav-links">Exercises</div>
+            <div class="nav-links">Preacutions</div>
+        </div>
+    </nav>
+
+    
+
+    <div class="section">
+
+        <h3 style="padding-top: 50px;">{{pred}}</h3>
+
+        <h2>Predict the probability of having Diabetes</h2>
+
+        <form action='/predict' method="post" class="form">
+
+                <div class="element">
+                    <label class="label" for="Glucose"><b>Glucose </b></label>
+                    <br>
+                    <input class="input" id="Glucose" name="2" placeholder="Glucose level in sugar"  type="text" class="validate">
+    
+                </div>
+
+                <div class="element">
+                    <label class="label" for="Insulin"><b>Insulin</b></label>
+                    <br>
+                    <input class="input" id="Insulin" name="5" placeholder="Insulin level"  type="text" class="validate">
+                </div>
+
+                <div class="element">
+                  <label class="label"><b>BMI</b></label>
+                  <br>
+                  <input class="input" name = '6' placeholder="Body Mass Index">
+
+                </div>
+
+                <div class="element">
+                    <label class="label"for="Age"><b>Age</b></label>
+                    <br>
+                    <input class="input" id="Age" name="8" placeholder="Age" type="text" class="validate">
+                </div>
+
+                <button type="submit" class="btn"><p>Predict Probability </p></button>
+    
+        </form>
+    </div>
+</body>
+</html>

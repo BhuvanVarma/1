@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fa5f69, #c67cec, #26c3e7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fa5f69, #c67cec, #26c3e7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("bg.webp");
+
+}
+
+nav{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding-left: 30px;
+}
+
+.nav-links{
+    padding-right: 30px;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.name{
+    font-weight: 800;
+    font-size: 25px; 
+    padding-left: 20px;
+    color: black;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon img{
+    height: 40px;
+    width: 40px; 
+    animation: 1s infinite heartbeat;
+	z-index: 1;  
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes heartbeat {
+	0% {
+		transform: scale(1.0);
+	}
+
+	25%{
+		transform: scale(1.2);
+	}
+	40%{
+		transform: scale(1.0);
+	} 
+	60%{
+		transform: scale(1.2);
+	} 
+
+	100%{
+		transform: scale(1.0);
+	}
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    justify-content: space-evenly;
+}
+
+.form{
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn{
+    height: 40px;
+    width: 260px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: 0.5s;
+}
+
+.btn:hover{
+    color: black;
+    border: 1px black solid;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.input{
+    height: 40px;
+    width: 260px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+    border-style: none;
+    text-align: center;
+}
+
+h2{
+    font-size: 25px;
+    padding-top: 50px;
+}
+
+.label{
+    font-size: 20px;
+}
